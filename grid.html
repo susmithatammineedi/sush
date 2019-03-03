@@ -72,7 +72,7 @@ function getRandomColor() {
   for (var i = 0; i < 6; i++) {
     color += characters[getRandomNumber(0, 200)];
   }
-  document.getElementsByClassName("grid-item-1").innerHTML=getRandomColor();
+  document.getElementsByClassName("grid-item-1").style.backgroung-color=getRandomColor();
 }
 
 function getRandomNumber(low, high) {
