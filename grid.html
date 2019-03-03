@@ -8,55 +8,56 @@
   background-color:light grey;
   padding: 10px;
 }
-.grid-item-1 {
+#grid-item-1 {
   background-color: rgba(0, 0, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
+  
  
 }
-.grid-item-2 {
+#grid-item-2 {
   background-color: rgba(0, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-3 {
+#grid-item-3 {
   background-color: rgba(255, 0, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-4 {
+#grid-item-4 {
   background-color: rgba(255, 255, 0, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-5 {
+#grid-item-5 {
   background-color: rgba(0, 0, 0, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-6 {
+#grid-item-6 {
   background-color: rgba(50, 60, 100, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-7 {
+#grid-item-7 {
   background-color: rgba(188, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-8 {
+#grid-item-8 {
   background-color:color;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
  
 }
-.grid-item-9 {
+#grid-item-9 {
   background-color:green;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
@@ -65,19 +66,22 @@
   
 </style>
 <script>
+  
+  
+    
+   
 function getRandomColor() {
-  var characters = "0123456789ABCDEF";
-  var color = '#';
-
-  for (var i = 0; i < 6; i++) {
-    color += characters[getRandomNumber(0, 200)];
+ document.getElementById("grid-item-1").style.backgroundColor = "lightblue";
+ document.getElementById("grid-item-2").style.backgroundColor = "red";
+ document.getElementById("grid-item-3").style.backgroundColor = "violet";
+ document.getElementById("grid-item-4").style.backgroundColor = "coral";
+ document.getElementById("grid-item-5").style.backgroundColor = "brown";
+ document.getElementById("grid-item-6").style.backgroundColor = "crimson";
+ document.getElementById("grid-item-7").style.backgroundColor = "indigo";
+ document.getElementById("grid-item-8").style.backgroundColor = "orange";
+ document.getElementById("grid-item-9").style.backgroundColor = "grey";
+ 
   }
-  document.getElementsByClassName("grid-item-1").style.backgroung-color=getRandomColor();
-}
-
-function getRandomNumber(low, high) {
-  var r = Math.floor(Math.random() * (high - low + 1)) + low;
-  return r;}
 </script>
 </head>
 <body>
@@ -86,17 +90,18 @@ function getRandomNumber(low, high) {
 
 
 <div class="grid-container">
-  <div class="grid-item-1"></div>
-  <div class="grid-item-2"></div>
-  <div class="grid-item-3"></div>  
-  <div class="grid-item-4"></div>
-  <div class="grid-item-5"></div>
-  <div class="grid-item-6"></div>  
-  <div class="grid-item-7"></div>
-  <div class="grid-item-8"></div>
-  <div class="grid-item-9"></div>  
+  <div id="grid-item-1"></div>
+  <div id="grid-item-2"></div>
+  <div id="grid-item-3"></div>  
+  <div id="grid-item-4"></div>
+  <div id="grid-item-5"></div>
+  <div id="grid-item-6"></div>  
+  <div id="grid-item-7"></div>
+  <div id="grid-item-8"></div>
+  <div id="grid-item-9"></div>  
 </div>
 
 <button onclick="getRandomColor()">change color</button>
 </body>
 </html>
+
